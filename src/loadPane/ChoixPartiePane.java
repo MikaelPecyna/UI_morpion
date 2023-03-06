@@ -1,5 +1,6 @@
 package loadPane;
 
+import ColorTheme.MyColor;
 import MenuTaille.MyTextField;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -12,7 +13,7 @@ public class ChoixPartiePane extends HBox {
 		
 		MyTextField partie = new MyTextField("Choisir une partie");
 		
-		this.setStyle("-fx-background-color: #E4D9FF;");
+		this.setStyle("-fx-background-color: #" + MyColor.MyCol.getThird() + ";");
 		
 		
 		HBox.setMargin(partie, new Insets(50, 15, 50, 30));

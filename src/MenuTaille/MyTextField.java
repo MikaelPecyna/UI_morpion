@@ -1,5 +1,6 @@
 package MenuTaille;
 
+import ColorTheme.MyColor;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -31,7 +32,7 @@ public class MyTextField extends VBox {
 		this.setMargin(lab, new Insets(0, 0, 10, 0));
 		
 		
-		lab.setTextFill(Color.web("0x273469"));
+		lab.setTextFill(Color.web("0x"+MyColor.MyCol.getFontColor()));
 		
 		
 		this.getChildren().addAll(lab, tf); 

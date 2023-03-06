@@ -1,5 +1,6 @@
 package MenuTaille;
 
+import ColorTheme.MyColor;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
@@ -12,7 +13,7 @@ public class TextFieldPane extends HBox{
 		MyTextField hauteur = new MyTextField("Hauteur");
 		MyTextField largeur= new MyTextField("Largeur");
 		
-		this.setStyle("-fx-background-color: #E4D9FF;");
+		this.setStyle("-fx-background-color: #" + MyColor.MyCol.getThird() + ";");
 		
 		
 		HBox.setMargin(hauteur, new Insets(50, 15, 50, 30));

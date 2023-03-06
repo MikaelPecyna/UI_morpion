@@ -2,6 +2,7 @@ package MenuImage;
 
 import AceuilItem.MyButton;
 import AceuilItem.TitlePane;
+import ColorTheme.MyColor;
 import MenuTaille.MyTextField;
 import MenuTaille.TextFieldPane;
 import javafx.geometry.Insets;
@@ -16,7 +17,7 @@ public class ChoixImagePane extends HBox{
 		
 		MyTextField hauteur = new MyTextField("Image");
 		
-		this.setStyle("-fx-background-color: #E4D9FF;");
+		this.setStyle("-fx-background-color: #" + MyColor.MyCol.getThird() + ";");
 		
 		
 		HBox.setMargin(hauteur, new Insets(50, 15, 50, 30));

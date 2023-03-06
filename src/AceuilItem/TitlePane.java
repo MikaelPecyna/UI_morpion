@@ -1,5 +1,6 @@
 package AceuilItem;
 
+import ColorTheme.MyColor;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
@@ -13,7 +14,7 @@ public class TitlePane extends HBox {
 	public TitlePane() {
 		super(); 
 		
-		this.style += "-fx-background-color: #E4D9FF;";
+		this.style += "-fx-background-color: #" + MyColor.MyCol.getMain() + ";";
 		this.style += "-fx-font-size: 50;";
 		
 //		this.style += "-fx-font-family: 'Montserrat', sans-serif;"	;  // TODO : Changer Font Family
@@ -24,7 +25,8 @@ public class TitlePane extends HBox {
 		
 		
 		Label title = new Label("GOMOKU"); 
-		title.setTextFill(Color.web("0x273469"));
+		System.out.println("0x" + MyColor.MyCol.getSecond());
+		title.setTextFill(Color.web("0x" + MyColor.MyCol.getSecond()));
 		title.setStyle("-fx-font-weight: bold;");
 		
 		
@@ -32,8 +34,7 @@ public class TitlePane extends HBox {
 		
 		
 		
-		this.setLayoutX(0);
-		this.setLayoutY(0);
+		
 		this.getChildren().add(title);
 	}
 	

@@ -5,7 +5,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
-public class HomePane extends VBox{
+public class HomePane extends BorderPane{
 	
 	
 	public HomePane(){
@@ -20,12 +20,14 @@ public class HomePane extends VBox{
 			double height = this.getHeight(); 
 			System.out.println(height);
 			title.setPrefHeight(height/3);
+			
 			btns.setPrefHeight(2 * height/3);
 			
 		});
 		
 		
-		this.getChildren().addAll(title, btns);
+		this.setTop(title);
+		this.setCenter(btns);
 		
 		
 		
@@ -33,7 +35,7 @@ public class HomePane extends VBox{
 		
 		
 		
-//		this.setStyle("-fx-background-color: #30343F; ");
+		this.setStyle("-fx-background-color: #000000; ");
 	}
 	
 	

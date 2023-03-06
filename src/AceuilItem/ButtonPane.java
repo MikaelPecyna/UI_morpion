@@ -1,4 +1,5 @@
 package AceuilItem;
+import ColorTheme.MyColor;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.layout.VBox;
@@ -17,7 +18,7 @@ public class ButtonPane extends VBox {
 		VBox.setMargin(fromImage, new Insets(15 , 0, 15, 0));
 		VBox.setMargin(loadPartie, new Insets(15, 0, 50, 0));
 		
-		this.setStyle("-fx-background-color: #30343F");
+		this.setStyle("-fx-background-color: #" + MyColor.MyCol.getThird() + ";" );
 		this.getChildren().addAll(fromSize, fromImage, loadPartie);
 		
 		
